@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- font-awesome cd link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container"> 
+        <div class="mealwrapper">
+            <div class="mealsearch">
+                <h3>Food Meal </h3>
+                <div class="mealsearchbox">
+                    <input id ="searchinput" type="text" class="searchtext" placeholder="search your meals" >
+                    <button id =" searchbtn" type="submit" class="search-btn btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="mealresult">
+                <h3 class="header">Find It meals item</h3>
+                <div id="meal">
+                    <div class="mealitem">
+                        <div class="mealimg">
+                            <img src="image/item.JPG" >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
     
 
 

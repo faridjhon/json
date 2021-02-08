@@ -15,27 +15,19 @@ function getmealList(){
         let html = "";
         if(data.meals){
             data.meals.forEach(meal =>{
-                html +="
-                <div class="mealitem" data-id = "${meal.idMeal}">
-                <div>
-                <img src="${meal.strMealThumb}" alt="">  
-                </div>
-
-                <div>
-                    <h3>
-                        ${meal.strMeal}
-                    </h3>
-                </div>
-                
-                
-                </div>
-                
-                
-                
-                
-                
-                
-                " ;
+                if(data.meals){
+                    data.meals.forEach(meal => {
+                        html += `
+                            <div class = "meal-item" data-id = "${meal.idMeal}">
+                                <div class = "meal-img">
+                                    <img src = "${meal.strMealThumb}" alt = "food">
+                                </div>
+                                <div class = "meal-name">
+                                    <h3>${meal.strMeal}</h3>
+                                    <a href = "#" class = "recipe-btn">Get Recipe</a>
+                                </div>
+                            </div>
+                        `;
             })
         }
 
